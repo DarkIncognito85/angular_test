@@ -1,0 +1,10 @@
+<section class="container mt-3">
+  <h1>Todo list</h1>
+  <ul>
+    <app-todo-item *ngFor="let item of todoList" [item]="item" (onDelete)="deleteItem($event)"></app-todo-item>
+  </ul>
+  <form (ngSubmit)="submit(append)">
+    <input type="text" placeholder="Quelques chose à ajouter..." #append>
+    <button class="primary">Append</button>
+  </form>
+</section>

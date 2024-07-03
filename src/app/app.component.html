@@ -1,0 +1,31 @@
+
+<main>
+  <section class="header">
+    <header class="brand-name">
+      <img class="brand-logo" src="http://new-docs.clientxcms.com/content/images/2024/03/clientxcms_text-1.png" alt="logo" aria-hidden="true" />
+    </header>
+
+    <ul>
+      <li>
+        <a [routerLink]="['/']">
+          Housing location
+        </a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/login']">
+          Login
+        </a>
+      </li>
+      <li>
+        <a [routerLink]="['/todo']">
+          Todo list
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="content">
+    <router-outlet></router-outlet>
+  </section>
+</main>

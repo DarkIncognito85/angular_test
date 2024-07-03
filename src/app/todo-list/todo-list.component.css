@@ -1,0 +1,8 @@
+input[type="text"], input[type="password"] {
+  border: solid 1px var(--primary-color);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 20px 10px;
+  display: inline-block;
+  width: 30%;
+}

@@ -1,0 +1,4 @@
+<li [ngClass]="{ 'line-through': item.completed }" (click)="toggleCompleted()">
+  {{ item.id }} - {{ item.name }}
+  <button class="danger" (click)="removeItem(item)">Delete</button>
+</li>
